@@ -1,0 +1,15 @@
+{
+  "name": "HAR-TotalResponseTime",
+  "version": "1.0.0",
+  "description": "Calculate Total Response Time from a HAR file",
+  "main": "calculate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kailaash Balachandran",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.1"
+  }
+}
