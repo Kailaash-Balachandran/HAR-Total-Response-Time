@@ -1,3 +1,5 @@
+An ease-to-use script to get the total response time from .HAR files for Web page Performance Analysis. 
+
 Clone the repo
 1. ```npm install```
 2. Copy .HAR files inside ./harFiles dir (you can more than file - better for benchmark comparisons)
