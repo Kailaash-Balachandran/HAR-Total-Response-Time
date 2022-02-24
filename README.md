@@ -6,4 +6,4 @@ Clone the repo
 3. Run ```node calculateTRT.js```
 
 Console logs the total response time in the format
-```{file_name} : {total_response_time_in_HH:MM:SS}```
+```{file_name} - {total_response_time_in_HH:MM:SS}```

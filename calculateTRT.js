@@ -26,13 +26,13 @@ function calculateTotalResponseTime(file) {
         return;
     }
 
-    var startTime = new Date(harContents.log.pages[0].startedDateTime);
-    var loadTime = 0;
+    let startTime = new Date(harContents.log.pages[0].startedDateTime);
+    let loadTime = 0;
 
     // Loop over all entries to determine the latest request end time
     // The variable 'har' contains the JSON of the HAR file
     harContents.log.entries.forEach(function(entry) {
-    var entryLoadTime = new Date(entry.startedDateTime);
+    let entryLoadTime = new Date(entry.startedDateTime);
     // Calculate the current request's end time by adding the time it needed to load to its start time
     entryLoadTime.setMilliseconds(entryLoadTime.getMilliseconds() + entry.time);
     // If the current request's end time is greater than the current latest request end time, then save it as new latest request end time
@@ -53,7 +53,7 @@ function formatDuration(ms) {
 
 function validateJSON(body) {
   try {
-    var data = JSON.parse(body);
+    let data = JSON.parse(body);
     return data;
   } catch(e) {
     return null;
